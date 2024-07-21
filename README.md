@@ -1,4 +1,6 @@
-# Static Data
+# 💾 Static Data
+
+App that build and outputs data as json, that can be hosted statically and accessed through the web.
 
 ## Available Scripts
 
