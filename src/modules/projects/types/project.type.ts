@@ -1,11 +1,11 @@
 /**
- * Project
+ * Project, but with the minium data required  to identify and filter it.
  *
  * @export
- * @interface Project
- * @typedef {Project}
+ * @interface LeanProject
+ * @typedef {LeanProject}
  */
-export interface Project {
+export interface LeanProject {
     /**
      * Identifier
      *
@@ -34,8 +34,19 @@ export interface Project {
      * @type {?string}
      */
     smImage?: string;
+}
 
-    /**
+
+/**
+ * Project
+ *
+ * @export
+ * @interface Project
+ * @typedef {Project}
+ * @extends {LeanProject}
+ */
+export interface Project extends LeanProject{
+        /**
      * A medium-size image (1200x600) for a project.
      *
      * @type {?string}
