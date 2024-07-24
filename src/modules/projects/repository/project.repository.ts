@@ -1,57 +1,48 @@
-import { ValueError } from "../../core/index.js";
-import { LeanProject, Project } from "../types/index.js";
+import { ValueError } from '../../core/index.js';
+import { LeanProject, Project } from '../types/index.js';
 
-export class ProjectRepository{
-    constructor(
-        private readonly PROJECTS: Project[],
-    ){}
+export class ProjectRepository {
+  constructor(private readonly PROJECTS: Project[]) {}
 
-    
-    /**
-     * Returns a list of lean projects. Used mainly for identifying and filtering projects in an efficient way.
-     * Not intended for fetching project contents.
-     *
-     * @public
-     * @returns {LeanProject[]}
-     */
-    public getAllLeanProjects(): LeanProject[]{
-        return this.PROJECTS.map(({
-            id,
-            name,
-            rating,
-            smImage,
-        }: Project): LeanProject => ({
-            id,
-            name,
-            rating,
-            smImage,
-        }));
-    }
-
-    
-    /**
-     * Project by id. If the projects is not found, an error is thrown.
-     *
-     * @public
-     * @param {GetProjectByIdOptions} param0
-     * @param {string} param0.id
-     * @returns {Project}
-     */
-    public getProjectById({
+  /**
+   * Returns a list of lean projects. Used mainly for identifying and filtering projects in an efficient way.
+   * Not intended for fetching project contents.
+   *
+   * @public
+   * @returns {LeanProject[]}
+   */
+  public getAllLeanProjects(): LeanProject[] {
+    return this.PROJECTS.map(
+      ({ id, name, rating, smImage }: Project): LeanProject => ({
         id,
-    }: GetProjectByIdOptions): Project{
-        const project = this.PROJECTS.find(project => project.id === id);
+        name,
+        rating,
+        smImage,
+      }),
+    );
+  }
 
-        if (!project) {
-            throw new ValueError('No project found with that id');
-        }
+  /**
+   * Project by id. If the projects is not found, an error is thrown.
+   *
+   * @public
+   * @param {GetProjectByIdOptions} param0
+   * @param {string} param0.id
+   * @returns {Project}
+   */
+  public getProjectById({ id }: GetProjectByIdOptions): Project {
+    const project = this.PROJECTS.find((project) => project.id === id);
 
-        return {
-            ...project,
-        }
+    if (!project) {
+      throw new ValueError('No project found with that id');
     }
+
+    return {
+      ...project,
+    };
+  }
 }
 
-interface GetProjectByIdOptions{
-    id: string;
+interface GetProjectByIdOptions {
+  id: string;
 }
