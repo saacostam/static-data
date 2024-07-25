@@ -33,14 +33,22 @@
     "prettier": "prettier --config .prettierrc --write .",
     "test:watch": "jest --watch",
     "go": "npm run build; npm run start",
-    "check": "npm run lint; npm run prettier; npm run build; npm run test"
+    "check": "npm run lint; npm run prettier; npm run build; npm run test",
+    "prepare": "husky"
   },
   "author": "Synowiec <jsynowiec@users.noreply.github.com> + saacostam",
   "license": "Apache-2.0",
   "dependencies": {
+    "husky": "^9.1.1",
     "tslib": "~2.6"
   },
   "volta": {
     "node": "20.12.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"[Husky] pre-commit\"",
+      "pre-push": "npm run check"
+    }
   }
 }
