@@ -5,7 +5,7 @@ export class NotFoundException extends Error {
 }
 
 export class BadRequestException extends Error {
-  constructor(msg?: string) {
-    super(`[Bad Request]${msg ? ` ${msg}` : ''}`);
+  constructor(msg: string) {
+    super(`[Bad Request]: ${msg}`);
   }
 }
