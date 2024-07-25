@@ -33,7 +33,8 @@
     "prettier": "prettier --config .prettierrc --write .",
     "test:watch": "jest --watch",
     "go": "npm run build; npm run start",
-    "check": "npm run lint; npm run prettier; npm run build; npm run test"
+    "check": "npm run lint; npm run prettier; npm run build; npm run test",
+    "prepare": "husky"
   },
   "author": "Synowiec <jsynowiec@users.noreply.github.com> + saacostam",
   "license": "Apache-2.0",
