@@ -34,13 +34,13 @@ export class ProjectService {
    * Sorted in descending order. That is, most popular is first.
    *
    * @public
-   * @param {GetTopNPopularLeanProjectsOptions} param0
+   * @param {getTopNRatedLeanProjectsOptions} param0
    * @param {number} param0.numberOfProjects: _numberOfProjects
    * @returns {LeanProject[]}
    */
-  public getNTopRatedLeanProjects({
+  public getTopNRatedLeanProjects({
     numberOfProjects: _numberOfProjects,
-  }: GetTopNPopularLeanProjectsOptions): LeanProject[] {
+  }: GetTopNRatedLeanProjectsOptions): LeanProject[] {
     let leanProjects = this.getAllLeanProjects();
 
     const numberOfProjects = Math.max(
@@ -60,6 +60,6 @@ interface GetProjectByIdOptions {
   id: string;
 }
 
-interface GetTopNPopularLeanProjectsOptions {
+interface GetTopNRatedLeanProjectsOptions {
   numberOfProjects: number;
 }

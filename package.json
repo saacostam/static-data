@@ -31,9 +31,11 @@
     "lint": "eslint . --ext .ts --ext .mts",
     "test": "jest --coverage",
     "prettier": "prettier --config .prettierrc --write .",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "go": "npm run build; npm run start",
+    "check": "npm run lint; npm run prettier; npm run build; npm run test"
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
+  "author": "Synowiec <jsynowiec@users.noreply.github.com> + saacostam",
   "license": "Apache-2.0",
   "dependencies": {
     "tslib": "~2.6"
