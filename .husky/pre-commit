@@ -1,1 +1,2 @@
-npm run check
+npm run prettier
+npm run build

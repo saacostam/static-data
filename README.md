@@ -13,6 +13,9 @@ App that build and outputs data as json, that can be hosted statically and acces
 - `test` - run tests,
 - `test:watch` - interactive watch mode to automatically re-run tests
 
+- `start` - execute compiled code (requires a previous build)
+- `go` - transpile Typescript and run compiled code.
+
 ## Template
 
 Project jump-started using the following [template](https://github.com/jsynowiec/node-typescript-boilerplate). Thanks! 🫶
