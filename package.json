@@ -38,9 +38,15 @@
   "author": "Synowiec <jsynowiec@users.noreply.github.com> + saacostam",
   "license": "Apache-2.0",
   "dependencies": {
+    "husky": "^9.1.1",
     "tslib": "~2.6"
   },
   "volta": {
     "node": "20.12.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check"
+    }
   }
 }
