@@ -1,4 +1,4 @@
-import { ValueError } from '../../core/index.js';
+import { NotFoundException } from '../../core/index.js';
 import { LeanProject, Project } from '../types/index.js';
 
 export class ProjectRepository {
@@ -34,7 +34,7 @@ export class ProjectRepository {
     const project = this.PROJECTS.find((project) => project.id === id);
 
     if (!project) {
-      throw new ValueError('No project found with that id');
+      throw new NotFoundException('Project');
     }
 
     return {
