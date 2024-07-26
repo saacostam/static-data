@@ -39,6 +39,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "husky": "^9.1.1",
+    "ts-mockito": "^2.6.1",
     "tslib": "~2.6"
   },
   "volta": {
