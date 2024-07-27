@@ -10,7 +10,9 @@ const projectController = new ProjectController(projectService);
 
 export const getTopNRatedLeanProjects: Builder =
   (): BuilderWriteInstruction[] => {
-    const topNRatedLeanProjects = projectController.getTopNRatedLeanProjects();
+    const topNRatedLeanProjects = projectController.getTopNRatedLeanProjects({
+      numberOfProjects: 6,
+    });
 
     return [
       {
