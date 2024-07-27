@@ -8,6 +8,7 @@ const MOCK_PROJECT_1: Project = {
   rating: 1,
   smImage: 'snImage1',
   mdImage: 'mdImage1',
+  description: 'desc1',
 };
 
 const MOCK_PROJECT_2: Project = {
@@ -16,6 +17,7 @@ const MOCK_PROJECT_2: Project = {
   rating: 2,
   smImage: 'snImage2',
   mdImage: 'mdImage2',
+  description: 'desc2',
 };
 
 const projectRepository = new ProjectRepository([

@@ -8,12 +8,14 @@ const MOCK_PROJECT_1: Project = {
   id: 'id1',
   name: 'name1',
   rating: 5,
+  description: 'desc1',
 };
 
 const MOCK_PROJECT_2: Project = {
   id: 'id2',
   name: 'name2',
   rating: 10,
+  description: 'desc2',
 };
 
 const projectRepository = mock(ProjectRepository);
