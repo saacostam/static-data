@@ -14,18 +14,22 @@ const builders: Builder[] = [
   getTopNRatedLeanProjects,
 ];
 
-for (const builder of builders) {
-  const instructions = builder();
+export async function index(builders: Builder[]): Promise<void> {
+  for (const builder of builders) {
+    const instructions = builder();
 
-  for (const instruction of instructions) {
-    const { path: _path, name, content } = instruction;
+    for (const instruction of instructions) {
+      const { path: _path, name, content } = instruction;
 
-    const path = `./docs/${_path}`;
+      const path = `./docs/${_path}`;
 
-    // Create directories (if necessary)
-    await createDirectories(path);
+      // Create directories (if necessary)
+      await createDirectories(path);
 
-    // Write to file
-    await writeFile(`${path}/${name}.json`, JSON.stringify(content));
+      // Write to file
+      await writeFile(`${path}/${name}.json`, JSON.stringify(content));
+    }
   }
 }
+
+void index(builders);
