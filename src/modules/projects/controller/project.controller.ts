@@ -14,13 +14,19 @@ export class ProjectController {
     });
   }
 
-  public getTopNRatedLeanProjects(): LeanProject[] {
+  public getTopNRatedLeanProjects({
+    numberOfProjects,
+  }: GetTopNRatedLeanProjectsOptions): LeanProject[] {
     return this.projectService.getTopNRatedLeanProjects({
-      numberOfProjects: 3,
+      numberOfProjects: numberOfProjects || 3,
     });
   }
 }
 
 export interface GetProjectByIdOptions {
   id: string;
+}
+
+export interface GetTopNRatedLeanProjectsOptions {
+  numberOfProjects?: number;
 }

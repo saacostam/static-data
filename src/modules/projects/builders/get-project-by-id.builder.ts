@@ -14,6 +14,8 @@ export const getProjectByIdBuilder: Builder = (): BuilderWriteInstruction[] => {
   return leanProjects.map((project) => ({
     path: `project`,
     name: project.id,
-    content: leanProjects,
+    content: projectController.getProjectById({
+      id: project.id,
+    }),
   }));
 };

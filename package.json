@@ -32,7 +32,7 @@
     "test": "jest --coverage",
     "prettier": "prettier --config .prettierrc --write .",
     "test:watch": "jest --watch",
-    "go": "npm run build; npm run start",
+    "go": "npm run build; npm run start; npm run prettier;",
     "prepare": "husky"
   },
   "author": "Synowiec <jsynowiec@users.noreply.github.com> + saacostam",

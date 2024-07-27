@@ -1,1 +1,16 @@
-[{ "id": "test-project", "name": "Test Project", "rating": 2 }]
+[
+  {
+    "id": "tune-code",
+    "name": "TuneCode: Musical Programming Language",
+    "rating": 4.5
+  },
+  { "id": "chord-visualizer", "name": "Chord Visualizer", "rating": 4.5 },
+  {
+    "id": "lalu-spotify-clone",
+    "name": "Lalu: Spotify Clone - FE App",
+    "rating": 4.2
+  },
+  { "id": "3d-music-visualizer", "name": "3D Music Visualizer", "rating": 4 },
+  { "id": "bio-rastro", "name": "BioRastro - Game", "rating": 4 },
+  { "id": "fake-store", "name": "Fake Store API - FE App", "rating": 3.5 }
+]
