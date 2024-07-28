@@ -125,7 +125,7 @@ export const PROJECTS: Project[] = [
     smImage: '/assets/project/chord-visualizer.png',
     url: 'https://saacostam.github.io/fuzzy-noteable/',
     iframe: {
-      isResponsive: false,
+      isResponsive: true,
     },
   },
   {
