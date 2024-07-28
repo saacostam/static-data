@@ -9,6 +9,7 @@ const MOCK_PROJECT_1: Project = {
   smImage: 'snImage1',
   mdImage: 'mdImage1',
   description: 'desc1',
+  url: 'url1',
 };
 
 const MOCK_PROJECT_2: Project = {
@@ -18,6 +19,7 @@ const MOCK_PROJECT_2: Project = {
   smImage: 'snImage2',
   mdImage: 'mdImage2',
   description: 'desc2',
+  url: 'url2',
 };
 
 const projectRepository = new ProjectRepository([
@@ -28,8 +30,8 @@ const projectRepository = new ProjectRepository([
 describe('ProjectRepository', () => {
   it('should getAllLeanProjects', () => {
     expect(projectRepository.getAllLeanProjects()).toEqual([
-      { ...MOCK_PROJECT_1, mdImage: undefined },
-      { ...MOCK_PROJECT_2, mdImage: undefined },
+      { ...MOCK_PROJECT_1, mdImage: undefined, url: undefined },
+      { ...MOCK_PROJECT_2, mdImage: undefined, url: undefined },
     ]);
   });
 

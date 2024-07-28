@@ -9,6 +9,7 @@ const MOCK_PROJECT_1: Project = {
   name: 'name1',
   rating: 5,
   description: 'desc1',
+  url: 'url1',
 };
 
 const MOCK_PROJECT_2: Project = {
@@ -16,6 +17,7 @@ const MOCK_PROJECT_2: Project = {
   name: 'name2',
   rating: 10,
   description: 'desc2',
+  url: 'url2',
 };
 
 const projectRepository = mock(ProjectRepository);
