@@ -113,6 +113,7 @@ export const PROJECTS: Project[] = [
     url: 'https://saacostam.github.io/trivia/',
     iframe: {
       isResponsive: true,
+      height: 850,
     },
   },
   {
