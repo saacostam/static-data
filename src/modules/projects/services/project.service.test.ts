@@ -10,6 +10,9 @@ const MOCK_PROJECT_1: Project = {
   rating: 5,
   description: 'desc1',
   url: 'url1',
+  iframe: {
+    isResponsive: true,
+  },
 };
 
 const MOCK_PROJECT_2: Project = {
@@ -18,6 +21,9 @@ const MOCK_PROJECT_2: Project = {
   rating: 10,
   description: 'desc2',
   url: 'url2',
+  iframe: {
+    isResponsive: false,
+  },
 };
 
 const projectRepository = mock(ProjectRepository);
