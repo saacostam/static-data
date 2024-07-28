@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
     description:
       'Fake Store is a "fake" front-end application that uses mock data from the fake-store-api to simulate an e-commerce website. It was built as a personal project, to learn Vue, Axios and Vuex.',
     smImage: '/assets/project/fake-store.png',
-    url: 'https://github.com/saacostam/fake-store',
+    url: 'https://saacostam.github.io/fake-store',
   },
   {
     id: 'tune-code',
