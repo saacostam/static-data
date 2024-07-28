@@ -130,7 +130,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'crossy-road',
     name: 'Crossy Road - Game Clone',
-    rating: 4.0,
+    rating: 4.1,
     description:
       'This is a clone project for the game Crossy Road, built using BabylonJs as the 3D game engine. The project and class structure mirrors the ExcaliburJs framework, but using the 3D primitives provided by BabylonJs.',
     smImage: '/assets/project/crossy-road.png',
@@ -138,6 +138,8 @@ export const PROJECTS: Project[] = [
     iframe: {
       isResponsive: false,
       canBeUsedInMobile: false,
+      width: 1000,
+      height: 500,
     },
   },
 ];
