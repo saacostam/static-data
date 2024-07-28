@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
     name: 'BioRastro - Game',
     rating: 4.0,
     description:
-      "t is a pokemon-like game where the objective is to discover the fauna of the chingaza paramo. It's purpose is educating the player in the biodiversity of this paramo and Colombia 🇨🇴 in general. It was built using excalibur JS.",
+      "It is a pokemon-like game where the objective is to discover the fauna of the chingaza paramo. It's purpose is educating the player in the biodiversity of this paramo and Colombia 🇨🇴 in general. It was built using excalibur JS.",
     smImage: '/assets/project/bio-rastro.png',
     url: 'https://saacostam.github.io/bio-rastro/',
   },
@@ -90,5 +90,14 @@ export const PROJECTS: Project[] = [
       'Web App for leaning chords with a real-time interactive visualizer that syncs to a audio source (Youtube video)',
     smImage: '/assets/project/chord-visualizer.png',
     url: 'https://saacostam.github.io/fuzzy-noteable/',
+  },
+  {
+    id: 'crossy-road',
+    name: 'Crossy Road - Game Clone',
+    rating: 4.0,
+    description:
+      'This is a clone project for the game Crossy Road, built using BabylonJs as the 3D game engine. The project and class structure mirrors the ExcaliburJs framework, but using the 3D primitives provided by BabylonJs.',
+    smImage: '/assets/project/crossy-road.png',
+    url: 'https://saacostam.github.io/3d-crossy-road/',
   },
 ];
