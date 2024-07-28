@@ -153,6 +153,8 @@ export const PROJECTS: Project[] = [
     iframe: {
       isResponsive: false,
       canBeUsedInMobile: false,
+      height: 600,
+      width: 1000,
     },
   },
   {
@@ -165,6 +167,8 @@ export const PROJECTS: Project[] = [
     iframe: {
       isResponsive: true,
       canBeUsedInMobile: false,
+      height: 600,
+      width: 1000,
     },
   },
   {
