@@ -1,1 +1,1 @@
-{"id":"sudoku","name":"Sudoku","rating":2.5,"description":"A traditional sudoku game built using the HTML Canvas element. It has random level generation, pencil, cell-highlighting, answer validation and timer.","smImage":"/assets/project/sudoku.png"}
+{"id":"sudoku","name":"Sudoku","rating":2.5,"description":"A traditional sudoku game built using the HTML Canvas element. It has random level generation, pencil, cell-highlighting, answer validation and timer.","smImage":"/assets/project/sudoku.png","url":"https://saacostam.github.io/static-websites/sudoku/"}
