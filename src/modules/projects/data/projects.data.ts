@@ -143,4 +143,39 @@ export const PROJECTS: Project[] = [
       height: 500,
     },
   },
+  {
+    id: 'tetris',
+    name: 'Tetris - Game Clone',
+    rating: 3.3,
+    description:
+      "Clone of Tetris, built using vue, using javidx9's (🙌) tetris video as a reference.",
+    url: 'https://saacostam.github.io/tetris-vue/',
+    iframe: {
+      isResponsive: false,
+      canBeUsedInMobile: false,
+    },
+  },
+  {
+    id: 'slippery-slope',
+    name: 'Slippery Slope',
+    rating: 3.5,
+    description:
+      "A platform game built using the HTML Canvas element. It's slippery because I didn't know proper friction physics 🫠",
+    url: 'https://saacostam.github.io/slippery-slope/',
+    iframe: {
+      isResponsive: true,
+      canBeUsedInMobile: false,
+    },
+  },
+  {
+    id: 'piano-roll',
+    name: 'Piano Roll',
+    rating: 3.6,
+    description: 'A functional Piano Roll for web music prototyping',
+    url: 'https://saacostam.github.io/piano-roll/',
+    iframe: {
+      isResponsive: false,
+      canBeUsedInMobile: false,
+    },
+  },
 ];
