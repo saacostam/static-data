@@ -1,11 +1,12 @@
 import { ProjectRepository } from './index.js';
-import { Project } from '../types/index.js';
 import { NotFoundException } from '../../core/index.js';
+import { Project, ProjectCategory } from '../types/index.js';
 
 const MOCK_PROJECT_1: Project = {
   id: 'id1',
   name: 'name1',
   rating: 1,
+  category: ProjectCategory.Games,
   smImage: 'snImage1',
   mdImage: 'mdImage1',
   description: 'desc1',
@@ -19,6 +20,7 @@ const MOCK_PROJECT_2: Project = {
   id: 'id2',
   name: 'name2',
   rating: 2,
+  category: ProjectCategory.SoftwareEngineering,
   smImage: 'snImage2',
   mdImage: 'mdImage2',
   description: 'desc2',

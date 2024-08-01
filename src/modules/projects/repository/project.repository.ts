@@ -13,11 +13,19 @@ export class ProjectRepository {
    */
   public getAllLeanProjects(): LeanProject[] {
     return this.PROJECTS.map(
-      ({ id, name, rating, description, smImage }: Project): LeanProject => ({
+      ({
         id,
         name,
         rating,
         description,
+        category,
+        smImage,
+      }: Project): LeanProject => ({
+        id,
+        name,
+        rating,
+        description,
+        category,
         smImage,
       }),
     );

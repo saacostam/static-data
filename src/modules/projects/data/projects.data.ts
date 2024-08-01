@@ -1,10 +1,11 @@
-import { Project } from '../types/index.js';
+import { Project, ProjectCategory } from '../types/index.js';
 
 export const PROJECTS: Project[] = [
   {
     id: 'fake-store',
     name: 'Fake Store API - FE App',
     rating: 3.5,
+    category: ProjectCategory.SoftwareEngineering,
     description:
       'Fake Store is a "fake" front-end application that uses mock data from the fake-store-api to simulate an e-commerce website. It was built as a personal project, to learn Vue, Axios and Vuex.',
     smImage: '/assets/project/fake-store.png',
@@ -17,6 +18,7 @@ export const PROJECTS: Project[] = [
     id: 'tune-code',
     name: 'TuneCode: Musical Programming Language',
     rating: 4.5,
+    category: ProjectCategory.MusicSoftware,
     description:
       "TuneCode is a web programming language for music creation, oriented towards people with experience in the use of software dedicated to music production (DAW: Digital Audio Workstations). Using analogous concepts to DAW's, TuneCode allows the playback of melodies through basic oscillators, the scheduling of samples and the use of effects.",
     smImage: '/assets/project/tune-code.png',
@@ -29,6 +31,7 @@ export const PROJECTS: Project[] = [
     id: '3d-music-visualizer',
     name: '3D Music Visualizer',
     rating: 4,
+    category: ProjectCategory.MusicSoftware,
     description:
       'Website that creates a 3D visualization of audio files, using the AnalyserNode from the JavaScript Audio API, and p5.js & WEBGL to render the graphics. It enables users to choose between different displays, set their own parameters and upload their own audio files.',
     smImage: '/assets/project/3d-music-visualizer.png',
@@ -42,6 +45,7 @@ export const PROJECTS: Project[] = [
     id: 'sudoku',
     name: 'Sudoku',
     rating: 2.5,
+    category: ProjectCategory.Games,
     description:
       'A traditional sudoku game built using the HTML Canvas element. It has random level generation, pencil, cell-highlighting, answer validation and timer.',
     smImage: '/assets/project/sudoku.png',
@@ -55,6 +59,7 @@ export const PROJECTS: Project[] = [
     id: 'music-visualizer',
     name: '2D Music Visualizer',
     rating: 3.5,
+    category: ProjectCategory.MusicSoftware,
     description:
       'Music Visualizer is a website that uses the AnalyserNode from JavaScript Audio API to create a 3-band frequency-based visualization. It enables the user to set their own parameters and select from a range of preloaded songs. It was built as a personal project to learn the Canvas API.',
     smImage: '/assets/project/music-visualizer.png',
@@ -67,6 +72,7 @@ export const PROJECTS: Project[] = [
     id: 'lalu',
     name: 'Lalu: Spotify Clone - FE App',
     rating: 4.2,
+    category: ProjectCategory.MusicSoftware,
     description:
       'This is a frontend application similar to Spotify that allows users to listen to music, view artist profiles and listen to playlists. It was originally created as a class project, which used a distributed microservices backend with multiple programming languages and components. Currently, the frontend application uses mock-data to achieve the original behavior.',
     smImage: '/assets/project/lalu.png',
@@ -79,6 +85,7 @@ export const PROJECTS: Project[] = [
     id: 'signal-grid',
     name: 'Signal Grid - Game',
     rating: 2.4,
+    category: ProjectCategory.Games,
     description:
       'Signal-grid is a game, written in vanilla typescript, that is similar to traditional pipe puzzles.',
     smImage: '/assets/project/signal-grid.png',
@@ -92,6 +99,7 @@ export const PROJECTS: Project[] = [
     id: 'bio-rastro',
     name: 'BioRastro - Game',
     rating: 4.0,
+    category: ProjectCategory.Games,
     description:
       "It is a pokemon-like game where the objective is to discover the fauna of the chingaza paramo. It's purpose is educating the player in the biodiversity of this paramo and Colombia 🇨🇴 in general. It was built using excalibur JS.",
     smImage: '/assets/project/bio-rastro.png',
@@ -107,6 +115,7 @@ export const PROJECTS: Project[] = [
     id: 'trivia',
     name: 'Trivia API - FE App',
     rating: 3.5,
+    category: ProjectCategory.SoftwareEngineering,
     description:
       'Web application that uses the public trivia api to retrieve trivia questions, and keep stats about the users performance. It is built using React + Vite + ReactQuery.',
     smImage: '/assets/project/trivia.png',
@@ -120,6 +129,7 @@ export const PROJECTS: Project[] = [
     id: 'chord-visualizer',
     name: 'Chord Visualizer',
     rating: 4.5,
+    category: ProjectCategory.MusicSoftware,
     description:
       'Web App for leaning chords with a real-time interactive visualizer that syncs to a audio source (Youtube video)',
     smImage: '/assets/project/chord-visualizer.png',
@@ -132,6 +142,7 @@ export const PROJECTS: Project[] = [
     id: 'crossy-road',
     name: 'Crossy Road - Game Clone',
     rating: 4.1,
+    category: ProjectCategory.Games,
     description:
       'This is a clone project for the game Crossy Road, built using BabylonJs as the 3D game engine. The project and class structure mirrors the ExcaliburJs framework, but using the 3D primitives provided by BabylonJs.',
     smImage: '/assets/project/crossy-road.png',
@@ -147,6 +158,7 @@ export const PROJECTS: Project[] = [
     id: 'tetris',
     name: 'Tetris - Game Clone',
     rating: 3.3,
+    category: ProjectCategory.Games,
     description:
       "Clone of Tetris, built using vue, using javidx9's (🙌) tetris video as a reference.",
     url: 'https://saacostam.github.io/tetris-vue/',
@@ -161,6 +173,7 @@ export const PROJECTS: Project[] = [
     id: 'slippery-slope',
     name: 'Slippery Slope',
     rating: 3.5,
+    category: ProjectCategory.Games,
     description:
       "A platform game built using the HTML Canvas element. It's slippery because I didn't know proper friction physics 🫠",
     url: 'https://saacostam.github.io/slippery-slope/',
@@ -175,6 +188,7 @@ export const PROJECTS: Project[] = [
     id: 'piano-roll',
     name: 'Piano Roll',
     rating: 3.6,
+    category: ProjectCategory.Games,
     description: 'A functional Piano Roll for web music prototyping',
     url: 'https://saacostam.github.io/piano-roll/',
     iframe: {
