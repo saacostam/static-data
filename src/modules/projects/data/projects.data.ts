@@ -188,7 +188,7 @@ export const PROJECTS: Project[] = [
     id: 'piano-roll',
     name: 'Piano Roll',
     rating: 3.6,
-    category: ProjectCategory.Games,
+    category: ProjectCategory.MusicSoftware,
     description: 'A functional Piano Roll for web music prototyping',
     url: 'https://saacostam.github.io/piano-roll/',
     iframe: {
