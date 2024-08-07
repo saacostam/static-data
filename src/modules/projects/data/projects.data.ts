@@ -161,6 +161,7 @@ export const PROJECTS: Project[] = [
     category: ProjectCategory.Games,
     description:
       "Clone of Tetris, built using vue, using javidx9's (🙌) tetris video as a reference.",
+    smImage: '/assets/project/tetris.png',
     url: 'https://saacostam.github.io/tetris-vue/',
     iframe: {
       isResponsive: false,
@@ -176,6 +177,7 @@ export const PROJECTS: Project[] = [
     category: ProjectCategory.Games,
     description:
       "A platform game built using the HTML Canvas element. It's slippery because I didn't know proper friction physics 🫠",
+    smImage: '/assets/project/slippery-slope.png',
     url: 'https://saacostam.github.io/slippery-slope/',
     iframe: {
       isResponsive: true,
@@ -190,6 +192,7 @@ export const PROJECTS: Project[] = [
     rating: 3.6,
     category: ProjectCategory.MusicSoftware,
     description: 'A functional Piano Roll for web music prototyping',
+    smImage: '/assets/project/piano-roll.png',
     url: 'https://saacostam.github.io/piano-roll/',
     iframe: {
       isResponsive: false,
