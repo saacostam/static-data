@@ -8,7 +8,7 @@ const MOCK_PROJECT_1: Project = {
   id: 'id1',
   name: 'name1',
   rating: 5,
-  category: ProjectCategory.Games,
+  category: [ProjectCategory.Games],
   description: 'desc1',
   url: 'url1',
   iframe: {
@@ -20,7 +20,7 @@ const MOCK_PROJECT_2: Project = {
   id: 'id2',
   name: 'name2',
   rating: 10,
-  category: ProjectCategory.SoftwareEngineering,
+  category: [ProjectCategory.SoftwareEngineering],
   description: 'desc2',
   url: 'url2',
   iframe: {
