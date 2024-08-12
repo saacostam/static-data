@@ -13,6 +13,7 @@ export const PROJECTS: Project[] = [
     iframe: {
       isResponsive: true,
     },
+    repoUrl: 'https://github.com/saacostam/fake-store',
   },
   {
     id: 'tune-code',
@@ -26,6 +27,7 @@ export const PROJECTS: Project[] = [
     iframe: {
       isResponsive: false,
     },
+    repoUrl: 'https://github.com/saacostam/music-dsl',
   },
   {
     id: '3d-music-visualizer',
@@ -40,6 +42,7 @@ export const PROJECTS: Project[] = [
       isResponsive: false,
       canBeUsedInMobile: false,
     },
+    repoUrl: 'https://github.com/saacostam/3d-music-visualizer',
   },
   {
     id: 'sudoku',
@@ -54,6 +57,7 @@ export const PROJECTS: Project[] = [
       isResponsive: true,
       canBeUsedInMobile: false,
     },
+    repoUrl: 'https://github.com/saacostam/static-websites/',
   },
   {
     id: 'music-visualizer',
@@ -67,6 +71,7 @@ export const PROJECTS: Project[] = [
     iframe: {
       isResponsive: true,
     },
+    repoUrl: 'https://github.com/saacostam/music-visualizer',
   },
   {
     id: 'lalu',
@@ -83,6 +88,7 @@ export const PROJECTS: Project[] = [
     iframe: {
       isResponsive: true,
     },
+    repoUrl: 'https://github.com/saacostam/lalu',
   },
   {
     id: 'signal-grid',
@@ -97,6 +103,7 @@ export const PROJECTS: Project[] = [
       isResponsive: false,
       canBeUsedInMobile: false,
     },
+    repoUrl: 'https://github.com/saacostam/signal-grid',
   },
   {
     id: 'bio-rastro',
@@ -113,6 +120,7 @@ export const PROJECTS: Project[] = [
       width: 1000,
       height: 500,
     },
+    repoUrl: 'https://github.com/saacostam/bio-rastro',
   },
   {
     id: 'trivia',
@@ -127,6 +135,7 @@ export const PROJECTS: Project[] = [
       isResponsive: true,
       height: 850,
     },
+    repoUrl: 'https://github.com/saacostam/trivia',
   },
   {
     id: 'chord-visualizer',
@@ -140,6 +149,7 @@ export const PROJECTS: Project[] = [
     iframe: {
       isResponsive: true,
     },
+    repoUrl: 'https://github.com/saacostam/fuzzy-noteable',
   },
   {
     id: 'crossy-road',
@@ -156,6 +166,7 @@ export const PROJECTS: Project[] = [
       width: 1000,
       height: 500,
     },
+    repoUrl: 'https://github.com/saacostam/3d-crossy-road/',
   },
   {
     id: 'tetris',
@@ -172,6 +183,7 @@ export const PROJECTS: Project[] = [
       height: 550,
       width: 1000,
     },
+    repoUrl: 'https://github.com/saacostam/tetris-vue',
   },
   {
     id: 'slippery-slope',
@@ -188,6 +200,7 @@ export const PROJECTS: Project[] = [
       height: 435,
       width: 830,
     },
+    repoUrl: 'https://github.com/saacostam/slippery-slope',
   },
   {
     id: 'piano-roll',
@@ -201,5 +214,6 @@ export const PROJECTS: Project[] = [
       isResponsive: false,
       canBeUsedInMobile: false,
     },
+    repoUrl: 'https://github.com/saacostam/piano-roll',
   },
 ];

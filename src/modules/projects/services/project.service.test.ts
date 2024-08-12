@@ -14,6 +14,7 @@ const MOCK_PROJECT_1: Project = {
   iframe: {
     isResponsive: true,
   },
+  repoUrl: 'repoUrl',
 };
 
 const MOCK_PROJECT_2: Project = {
@@ -26,6 +27,7 @@ const MOCK_PROJECT_2: Project = {
   iframe: {
     isResponsive: false,
   },
+  repoUrl: 'repoUrl',
 };
 
 const projectRepository = mock(ProjectRepository);
