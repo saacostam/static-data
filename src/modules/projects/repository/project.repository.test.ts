@@ -45,12 +45,14 @@ describe('ProjectRepository', () => {
         mdImage: undefined,
         url: undefined,
         iframe: undefined,
+        repoUrl: undefined,
       },
       {
         ...MOCK_PROJECT_2,
         mdImage: undefined,
         url: undefined,
         iframe: undefined,
+        repoUrl: undefined,
       },
     ]);
   });
