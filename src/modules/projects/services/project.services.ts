@@ -125,7 +125,8 @@ export class ProjectService {
     return projectWithDistances
       .sort(ascendingOrderBasedOnDistance)
       .slice(0, n)
-      .map(({ project }) => ProjectRepository.mapProjectToLeanProject(project));
+      .map(({ project }) => ProjectRepository.mapProjectToLeanProject(project))
+      .sort((a, b) => b.rating - a.rating);
   }
 }
 
