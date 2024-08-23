@@ -86,7 +86,7 @@ export class ProjectService {
       return value + categoryValue;
     }, 0);
 
-    return [project.rating, projectCategoryValue];
+    return [projectCategoryValue];
   }
 
   /**
@@ -119,7 +119,9 @@ export class ProjectService {
     const ascendingOrderBasedOnDistance = (
       a: ProjectWithDistance,
       b: ProjectWithDistance,
-    ): number => a.distance - b.distance;
+    ): number =>
+      0.5 * (a.distance - b.distance) +
+      0.5 * (b.project.rating - a.project.rating);
     return projectWithDistances
       .sort(ascendingOrderBasedOnDistance)
       .slice(0, n)
