@@ -1,5 +1,5 @@
 import { ProjectService } from '../services/index.js';
-import { LeanProject, Project } from '../types/index.js';
+import { LeanProject, ProjectDto } from '../types/index.js';
 
 export class ProjectController {
   constructor(private readonly projectService: ProjectService) {}
@@ -8,7 +8,7 @@ export class ProjectController {
     return this.projectService.getAllLeanProjects();
   }
 
-  public getProjectById({ id }: GetProjectByIdOptions): Project {
+  public getProjectById({ id }: GetProjectByIdOptions): ProjectDto {
     return this.projectService.getProjectById({
       id: id,
     });
