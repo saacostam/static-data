@@ -1,8 +1,8 @@
-import { anything, instance, mock, when } from 'ts-mockito';
+import { instance, mock, when } from 'ts-mockito';
 
 import { ProjectService } from './index.js';
 import { ProjectRepository } from '../repository/index.js';
-import { Project, ProjectCategory } from '../types/index.js';
+import { LeanProject, Project, ProjectCategory } from '../types/index.js';
 
 const MOCK_PROJECT_1: Project = {
   id: 'id1',
@@ -30,6 +30,32 @@ const MOCK_PROJECT_2: Project = {
   repoUrl: 'repoUrl',
 };
 
+const MOCK_PROJECT_3: Project = {
+  id: 'id3',
+  name: 'name3',
+  rating: 12,
+  category: [ProjectCategory.SoftwareEngineering, ProjectCategory.Games],
+  description: 'desc3',
+  url: 'url3',
+  iframe: {
+    isResponsive: false,
+  },
+  repoUrl: 'repoUrl',
+};
+
+const MOCK_PROJECT_4: Project = {
+  id: 'id4',
+  name: 'name4',
+  rating: 9,
+  category: [ProjectCategory.MusicSoftware],
+  description: 'desc4',
+  url: 'url4',
+  iframe: {
+    isResponsive: false,
+  },
+  repoUrl: 'repoUrl',
+};
+
 const projectRepository = mock(ProjectRepository);
 const projectRepositoryInstance = instance(projectRepository);
 
@@ -44,12 +70,29 @@ describe('ProjectService', () => {
   });
 
   it('should getProjectById', () => {
-    when(projectRepository.getProjectById(anything())).thenReturn(
+    const mockProjects: Project[] = [
       MOCK_PROJECT_1,
-    );
-    expect(projectService.getProjectById({ id: MOCK_PROJECT_1.id })).toEqual(
-      MOCK_PROJECT_1,
-    );
+      MOCK_PROJECT_2,
+      MOCK_PROJECT_3,
+      MOCK_PROJECT_4,
+    ];
+
+    const mockLeanProjects: LeanProject[] = [
+      MOCK_PROJECT_2,
+      MOCK_PROJECT_3,
+      MOCK_PROJECT_4,
+    ].map(ProjectRepository.mapProjectToLeanProject);
+
+    when(projectRepository.getAllProjects()).thenReturn(mockProjects);
+
+    expect(projectService.getProjectById({ id: MOCK_PROJECT_1.id })).toEqual({
+      ...MOCK_PROJECT_1,
+      similarProjects: [
+        mockLeanProjects[1],
+        mockLeanProjects[0],
+        mockLeanProjects[2],
+      ],
+    });
   });
 
   it('should getTopNRatedLeanProjects', () => {
