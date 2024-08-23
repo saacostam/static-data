@@ -1,8 +1,12 @@
 import { NotFoundException, ValueException } from '../../core/index.js';
 import { euclideanDistance } from '../../vector-distance/index.js';
 import { ProjectRepository } from '../repository/index.js';
-import { LeanProject, Project, ProjectCategory } from '../types/index.js';
-import { ProjectDto } from '../types/project.dto.js';
+import {
+  LeanProject,
+  Project,
+  ProjectCategory,
+  ProjectDto,
+} from '../types/index.js';
 
 export class ProjectService {
   constructor(private readonly projectRepository: ProjectRepository) {}
