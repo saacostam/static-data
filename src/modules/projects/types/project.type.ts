@@ -91,3 +91,31 @@ export enum ProjectCategory {
   MusicSoftware = 'Music Software',
   Games = 'Games',
 }
+
+// Project Content
+
+export enum ProjectContentType {
+  TEXT = 'text',
+  UNORDERED_LIST = 'ul',
+  ORDERED_LIST = 'ol',
+}
+
+export interface TextContent {
+  type: ProjectContentType.TEXT;
+  text: string;
+}
+
+export interface UnorderedListContent {
+  type: ProjectContentType.UNORDERED_LIST;
+  listElements: string[];
+}
+
+export interface OrderedListContent {
+  type: ProjectContentType.ORDERED_LIST;
+  listElements: string[];
+}
+
+export type ProjectContent =
+  | TextContent
+  | UnorderedListContent
+  | OrderedListContent;
