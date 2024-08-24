@@ -9,3 +9,9 @@ export class BadRequestException extends Error {
     super(`[Bad Request]: ${msg}`);
   }
 }
+
+export class ValueException extends Error {
+  constructor(msg: string) {
+    super(`[Value Error]: ${msg}`);
+  }
+}

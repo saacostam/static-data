@@ -92,8 +92,11 @@ export enum ProjectCategory {
   Games = 'Games',
 }
 
-// Project Content
+export interface ProjectDto extends Project {
+  similarProjects: LeanProject[];
+}
 
+// Project Content
 export enum ProjectContentType {
   TEXT = 'text',
   UNORDERED_LIST = 'ul',
