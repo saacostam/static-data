@@ -15,6 +15,7 @@ const MOCK_PROJECT_1: Project = {
     isResponsive: true,
   },
   repoUrl: 'repoUrl',
+  content: [],
 };
 
 const MOCK_PROJECT_2: Project = {
@@ -28,6 +29,7 @@ const MOCK_PROJECT_2: Project = {
     isResponsive: false,
   },
   repoUrl: 'repoUrl',
+  content: [],
 };
 
 const MOCK_PROJECT_3: Project = {
@@ -41,6 +43,7 @@ const MOCK_PROJECT_3: Project = {
     isResponsive: false,
   },
   repoUrl: 'repoUrl',
+  content: [],
 };
 
 const MOCK_PROJECT_4: Project = {
@@ -54,6 +57,7 @@ const MOCK_PROJECT_4: Project = {
     isResponsive: false,
   },
   repoUrl: 'repoUrl',
+  content: [],
 };
 
 const projectRepository = mock(ProjectRepository);

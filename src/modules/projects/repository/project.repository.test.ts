@@ -15,6 +15,7 @@ const MOCK_PROJECT_1: Project = {
     isResponsive: true,
   },
   repoUrl: 'repoUrl',
+  content: [],
 };
 
 const MOCK_PROJECT_2: Project = {
@@ -30,6 +31,7 @@ const MOCK_PROJECT_2: Project = {
     isResponsive: false,
   },
   repoUrl: 'repoUrl',
+  content: [],
 };
 
 const projectRepository = new ProjectRepository([
@@ -46,6 +48,7 @@ describe('ProjectRepository', () => {
         url: undefined,
         iframe: undefined,
         repoUrl: undefined,
+        content: undefined,
       },
       {
         ...MOCK_PROJECT_2,
@@ -53,6 +56,7 @@ describe('ProjectRepository', () => {
         url: undefined,
         iframe: undefined,
         repoUrl: undefined,
+        content: undefined,
       },
     ]);
   });

@@ -7,13 +7,14 @@ export const PROJECTS: Project[] = [
     rating: 3.5,
     category: [ProjectCategory.SoftwareEngineering],
     description:
-      'Fake Store is a "fake" front-end application that uses mock data from the fake-store-api to simulate an e-commerce website. It was built as a personal project, to learn Vue, Axios and Vuex.',
+      'Fake Store API - FE App is a front-end application that uses mock data from the fake-store-api to simulate an e-commerce website. Developed as a personal project, it focuses on applying and deepening knowledge of Vue, Axios, and Vuex.',
     smImage: '/assets/project/fake-store.png',
     url: 'https://saacostam.github.io/fake-store',
     iframe: {
       isResponsive: true,
     },
     repoUrl: 'https://github.com/saacostam/fake-store',
+    content: [],
   },
   {
     id: 'tune-code',
@@ -21,13 +22,14 @@ export const PROJECTS: Project[] = [
     rating: 4.5,
     category: [ProjectCategory.MusicSoftware],
     description:
-      "TuneCode is a web programming language for music creation, oriented towards people with experience in the use of software dedicated to music production (DAW: Digital Audio Workstations). Using analogous concepts to DAW's, TuneCode allows the playback of melodies through basic oscillators, the scheduling of samples and the use of effects.",
+      'TuneCode is a web-based programming language tailored for music creation, designed for users familiar with Digital Audio Workstations (DAWs). By using familiar DAW-like concepts, TuneCode enables users to create and manipulate music directly through code. It allows the playback of melodies using basic oscillators, the scheduling of audio samples, and the application of effects to craft rich soundscapes. TuneCode bridges the gap between music production and coding, offering a new, flexible way to explore musical creativity.',
     smImage: '/assets/project/tune-code.png',
     url: 'https://saacostam.github.io/music-dsl',
     iframe: {
       isResponsive: false,
     },
     repoUrl: 'https://github.com/saacostam/music-dsl',
+    content: [],
   },
   {
     id: '3d-music-visualizer',
@@ -35,7 +37,7 @@ export const PROJECTS: Project[] = [
     rating: 4,
     category: [ProjectCategory.MusicSoftware],
     description:
-      'Website that creates a 3D visualization of audio files, using the AnalyserNode from the JavaScript Audio API, and p5.js & WEBGL to render the graphics. It enables users to choose between different displays, set their own parameters and upload their own audio files.',
+      '3D Music Visualizer is a web application that generates attractive 3D visualizations of audio files, using the AnalyserNode from the JavaScript Audio API combined with p5.js and WEBGL for rendering. Users can upload their own audio tracks, customize various visual parameters, and select from different visualization modes to create a personalized experience. This project provides an engaging and dynamic way to explore the connection between sound and visuals.',
     smImage: '/assets/project/3d-music-visualizer.png',
     url: 'https://saacostam.github.io/3d-music-visualizer/',
     iframe: {
@@ -43,6 +45,7 @@ export const PROJECTS: Project[] = [
       canBeUsedInMobile: false,
     },
     repoUrl: 'https://github.com/saacostam/3d-music-visualizer',
+    content: [],
   },
   {
     id: 'sudoku',
@@ -50,7 +53,7 @@ export const PROJECTS: Project[] = [
     rating: 2.5,
     category: [ProjectCategory.Games],
     description:
-      'A traditional sudoku game built using the HTML Canvas element. It has random level generation, pencil, cell-highlighting, answer validation and timer.',
+      'Sudoku is a traditional sudoku game built using the HTML Canvas element. It features random level generation, a pencil tool for notes, cell highlighting, answer validation, and a timer. This project provides a comprehensive sudoku experience with interactive and dynamic gameplay elements.',
     smImage: '/assets/project/sudoku.png',
     url: 'https://saacostam.github.io/static-websites/sudoku/',
     iframe: {
@@ -58,6 +61,7 @@ export const PROJECTS: Project[] = [
       canBeUsedInMobile: false,
     },
     repoUrl: 'https://github.com/saacostam/static-websites/',
+    content: [],
   },
   {
     id: 'music-visualizer',
@@ -65,13 +69,14 @@ export const PROJECTS: Project[] = [
     rating: 3.5,
     category: [ProjectCategory.MusicSoftware],
     description:
-      'Music Visualizer is a website that uses the AnalyserNode from JavaScript Audio API to create a 3-band frequency-based visualization. It enables the user to set their own parameters and select from a range of preloaded songs. It was built as a personal project to learn the Canvas API.',
+      '2D Music Visualizer is a web application that leverages the AnalyserNode from the JavaScript Audio API to produce a 3-band frequency-based visualization. Users can customize parameters and choose from a selection of preloaded songs to visualize their music. This project was developed to explore the Canvas API, providing a hands-on approach to creating dynamic audio visualizations.',
     smImage: '/assets/project/music-visualizer.png',
     url: 'https://saacostam.github.io/music-visualizer/',
     iframe: {
       isResponsive: true,
     },
     repoUrl: 'https://github.com/saacostam/music-visualizer',
+    content: [],
   },
   {
     id: 'lalu',
@@ -82,13 +87,14 @@ export const PROJECTS: Project[] = [
       ProjectCategory.SoftwareEngineering,
     ],
     description:
-      'This is a frontend application similar to Spotify that allows users to listen to music, view artist profiles and listen to playlists. It was originally created as a class project, which used a distributed microservices backend with multiple programming languages and components. Currently, the frontend application uses mock-data to achieve the original behavior.',
+      'Lalu is a frontend application inspired by Spotify, designed to allow users to stream music, explore artist profiles, and enjoy curated playlists. Originally developed as a class project, the app was built to interface with a complex backend powered by distributed microservices using various programming languages and components. In its current state, the frontend relies on mock data to simulate the original functionality, providing an engaging music streaming experience without the need for a full backend infrastructure.',
     smImage: '/assets/project/lalu.png',
     url: 'https://saacostam.github.io/lalu/',
     iframe: {
       isResponsive: true,
     },
     repoUrl: 'https://github.com/saacostam/lalu',
+    content: [],
   },
   {
     id: 'signal-grid',
@@ -96,7 +102,7 @@ export const PROJECTS: Project[] = [
     rating: 2.4,
     category: [ProjectCategory.Games],
     description:
-      'Signal-grid is a game, written in vanilla typescript, that is similar to traditional pipe puzzles.',
+      "Signal Grid is a puzzle game developed in vanilla TypeScript, inspired by traditional pipe puzzles. The objective is to connect all the pipes in the grid to the source, ensuring a continuous flow throughout the network. Players must strategically arrange the pipes to complete the circuit and solve each level's challenge, emphasizing logical thinking and spatial reasoning.",
     smImage: '/assets/project/signal-grid.png',
     url: 'https://saacostam.github.io/static-websites/signal-grid/',
     iframe: {
@@ -104,6 +110,7 @@ export const PROJECTS: Project[] = [
       canBeUsedInMobile: false,
     },
     repoUrl: 'https://github.com/saacostam/signal-grid',
+    content: [],
   },
   {
     id: 'bio-rastro',
@@ -111,7 +118,7 @@ export const PROJECTS: Project[] = [
     rating: 4.0,
     category: [ProjectCategory.Games],
     description:
-      "It is a pokemon-like game where the objective is to discover the fauna of the chingaza paramo. It's purpose is educating the player in the biodiversity of this paramo and Colombia 🇨🇴 in general. It was built using excalibur JS.",
+      "BioRastro is a Pokémon-inspired game where players explore the Chingaza páramo, discovering its unique fauna. The game's goal is to educate players about the rich biodiversity of this Colombian ecosystem and Colombia 🇨🇴 as a whole. Built using Excalibur.js, BioRastro combines adventure and learning, offering an engaging way to raise awareness about environmental conservation.",
     smImage: '/assets/project/bio-rastro.png',
     url: 'https://saacostam.github.io/bio-rastro/',
     iframe: {
@@ -121,6 +128,7 @@ export const PROJECTS: Project[] = [
       height: 500,
     },
     repoUrl: 'https://github.com/saacostam/bio-rastro',
+    content: [],
   },
   {
     id: 'trivia',
@@ -128,7 +136,7 @@ export const PROJECTS: Project[] = [
     rating: 3.5,
     category: [ProjectCategory.SoftwareEngineering],
     description:
-      'Web application that uses the public trivia api to retrieve trivia questions, and keep stats about the users performance. It is built using React + Vite + ReactQuery.',
+      'This is a web application that utilizes the public trivia API to fetch trivia questions and track user performance. Built with React, Vite, and React Query, the app provides an interactive trivia experience, allowing users to test their knowledge while monitoring their progress and stats.',
     smImage: '/assets/project/trivia.png',
     url: 'https://saacostam.github.io/trivia/',
     iframe: {
@@ -136,6 +144,7 @@ export const PROJECTS: Project[] = [
       height: 850,
     },
     repoUrl: 'https://github.com/saacostam/trivia',
+    content: [],
   },
   {
     id: 'chord-visualizer',
@@ -143,13 +152,14 @@ export const PROJECTS: Project[] = [
     rating: 4.5,
     category: [ProjectCategory.MusicSoftware],
     description:
-      'Web App for leaning chords with a real-time interactive visualizer that syncs to a audio source (Youtube video)',
+      "Chord Visualizer is a web app designed to help musicians and music enthusiasts learn chords through an interactive and engaging experience. The app features a real-time chord visualizer that syncs seamlessly with audio sources like YouTube videos, providing a dynamic way to follow along with music. Users can see chords displayed as they play, enhancing their learning experience by combining visual cues with auditory input. Whether you're practicing a song or learning new chords, Chord Visualizer makes the process intuitive and fun.",
     smImage: '/assets/project/chord-visualizer.png',
     url: 'https://saacostam.github.io/fuzzy-noteable/',
     iframe: {
       isResponsive: true,
     },
     repoUrl: 'https://github.com/saacostam/fuzzy-noteable',
+    content: [],
   },
   {
     id: 'crossy-road',
@@ -157,7 +167,7 @@ export const PROJECTS: Project[] = [
     rating: 4.1,
     category: [ProjectCategory.Games],
     description:
-      'This is a clone project for the game Crossy Road, built using BabylonJs as the 3D game engine. The project and class structure mirrors the ExcaliburJs framework, but using the 3D primitives provided by BabylonJs.',
+      "This is a 3D recreation of the popular game Crossy Road, developed using BabylonJs as the game engine. The project's architecture and class structure closely follow the ExcaliburJs framework, while leveraging BabylonJs's 3D primitives to bring the game world to life. This project showcases the implementation of core gameplay mechanics in a 3D environment, providing a modern twist on a familiar classic.",
     smImage: '/assets/project/crossy-road.png',
     url: 'https://saacostam.github.io/3d-crossy-road/',
     iframe: {
@@ -167,6 +177,7 @@ export const PROJECTS: Project[] = [
       height: 500,
     },
     repoUrl: 'https://github.com/saacostam/3d-crossy-road/',
+    content: [],
   },
   {
     id: 'tetris',
@@ -174,7 +185,7 @@ export const PROJECTS: Project[] = [
     rating: 3.3,
     category: [ProjectCategory.Games],
     description:
-      "Clone of Tetris, built using vue, using javidx9's (🙌) tetris video as a reference.",
+      "Tetris - Game Clone is a Vue-based recreation of the classic Tetris game, developed with inspiration from javidx9's Tetris video tutorial 🙌. The project faithfully replicates the core gameplay mechanics and block-dropping challenges of the original, offering an engaging experience.",
     smImage: '/assets/project/tetris.png',
     url: 'https://saacostam.github.io/tetris-vue/',
     iframe: {
@@ -184,6 +195,7 @@ export const PROJECTS: Project[] = [
       width: 1000,
     },
     repoUrl: 'https://github.com/saacostam/tetris-vue',
+    content: [],
   },
   {
     id: 'slippery-slope',
@@ -191,7 +203,7 @@ export const PROJECTS: Project[] = [
     rating: 3.5,
     category: [ProjectCategory.Games],
     description:
-      "A platform game built using the HTML Canvas element. It's slippery because I didn't know proper friction physics 🫠",
+      "Slippery Slope is a platform game developed using the HTML Canvas element. The game's unique challenge comes from its slippery mechanics, a result of experimenting with friction physics during development. Players navigate through various levels, dealing with the game's intentionally slippery surfaces, which add a distinctive twist to the platforming experience.",
     smImage: '/assets/project/slippery-slope.png',
     url: 'https://saacostam.github.io/slippery-slope/',
     iframe: {
@@ -201,13 +213,15 @@ export const PROJECTS: Project[] = [
       width: 830,
     },
     repoUrl: 'https://github.com/saacostam/slippery-slope',
+    content: [],
   },
   {
     id: 'piano-roll',
     name: 'Piano Roll',
     rating: 3.6,
     category: [ProjectCategory.MusicSoftware],
-    description: 'A functional Piano Roll for web music prototyping',
+    description:
+      'Piano Roll is a functional web-based tool for music prototyping, designed to resemble the piano rolls found in music production software (DAWs). It allows users to visually compose and edit melodies by placing notes on a grid, providing an intuitive interface for creating music in a browser environment. This tool is ideal for quick music sketching and experimentation.',
     smImage: '/assets/project/piano-roll.png',
     url: 'https://saacostam.github.io/piano-roll/',
     iframe: {
@@ -215,5 +229,6 @@ export const PROJECTS: Project[] = [
       canBeUsedInMobile: false,
     },
     repoUrl: 'https://github.com/saacostam/piano-roll',
+    content: [],
   },
 ];
