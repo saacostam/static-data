@@ -48,6 +48,7 @@ describe('ProjectRepository', () => {
         url: undefined,
         iframe: undefined,
         repoUrl: undefined,
+        content: undefined,
       },
       {
         ...MOCK_PROJECT_2,
@@ -55,6 +56,7 @@ describe('ProjectRepository', () => {
         url: undefined,
         iframe: undefined,
         repoUrl: undefined,
+        content: undefined,
       },
     ]);
   });
