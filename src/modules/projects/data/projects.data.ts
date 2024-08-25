@@ -1,4 +1,8 @@
-import { Project, ProjectCategory } from '../types/index.js';
+import {
+  Project,
+  ProjectCategory,
+  ProjectContentType,
+} from '../types/index.js';
 
 export const PROJECTS: Project[] = [
   {
@@ -159,7 +163,63 @@ export const PROJECTS: Project[] = [
       isResponsive: true,
     },
     repoUrl: 'https://github.com/saacostam/fuzzy-noteable',
-    content: [],
+    content: [
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Key Features',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'Key and Capo Adjustment: Users can change the key or move the capo on a guitar, with chords automatically shifting based on the key.',
+          'Chord Display: Shows the previous, current, and next chords, allowing users to "get ready" for upcoming chords, especially useful for unfamiliar chords.',
+          'Chord Variations: Offers a relatively wide range of chord variations, covering many common chords.',
+          'Chord Duration Progress Bar: Displays a progress bar for each chord, indicating how long it should be played, which is helpful for songs with variable chord durations.',
+          'YouTube Playback Sync: Adapts to changes in playback position and speed on YouTube, allowing for flexible learning at different speeds.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Challanges and Solutions',
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: 'Syncing the visualizer with an audio source was the main challange from the project. Is was solved by adding time and duration meta-data to chords, creating a in-memory timeline to track the current, previous, and next chords based on the playback time. This approach achieved accurate audio sync, with the visual state updated on every frame.',
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Development Process Overview',
+      },
+      {
+        type: ProjectContentType.ORDERED_LIST,
+        listElements: [
+          'Defining Core Interfaces: Created interfaces for artist, song, tablature, chord, chord variations, and audio syncing metadata.',
+          'Mock Data Creation: Created mock data of two songs to develop and test the visualizer.',
+          'Agent-Based Architecture: Adopted an agent-based architecture similar to the common game loop (update + draw) for rendering the visualizer.',
+          'JSON Editor: Created a JSON editor to quickly test and iterate on song data, developing tabs for around 40 songs.',
+          'UI Development: Used daisyUI to build a basic UI for displaying and filtering available tabs.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Reflections and Learnings',
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: 'By decoupling the timeline state and rendering logic the code was greatly simplified. A "data manager" handles the in-memory chord timeline and returns the current chords, while a "canvas manager" handles rendering, allowing efficient execution on every animation frame.',
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Future Improvements',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'UI Enhancements: Transition from a canvas-based UI to using DOM elements overlaid on the canvas for better maintainability and accessibility.',
+          'Capo Update Logic: Improve the capo update logic to ensure changes are applied immediately rather than waiting for the chord to change.',
+        ],
+      },
+    ],
   },
   {
     id: 'crossy-road',
