@@ -33,7 +33,78 @@ export const PROJECTS: Project[] = [
       isResponsive: false,
     },
     repoUrl: 'https://github.com/saacostam/music-dsl',
-    content: [],
+    content: [
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Motivation',
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: 'The motivation behind TuneCode was to merge two passions: coding and music production. The project aimed to offer a creative and technical platform that blends the two fields, allowing users to code their music through a familiar yet flexible interface.',
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Key Features',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'Error Handling: Syntactical and semantic errors are displayed in the console, helping users write correct code.',
+          'Oscillators: Users can generate and play melodies using basic oscillators, such as sine, square, and triangle waves.',
+          'Audio Sample Scheduling: TuneCode allows for the scheduling and playback of audio samples.',
+          'Effects: Effects such as gain, reverb, and delay can be applied to audio sources, enriching the sound.',
+          'Mixing & Scheduling: Multiple audio sources can be played in parallel using a scheduling mechanism that enables intricate compositions.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Delelopment Process Overview',
+      },
+      {
+        type: ProjectContentType.ORDERED_LIST,
+        listElements: [
+          'Initial Proof of Concepts (POCs) were created to test oscillators, audio samples, and audio scheduling.',
+          'Language primitives were defined to mirror common DAW elements and workflows, such as tabs, audio sources, and effect chains.',
+          'The parser was built using ANTLR, and an iterative process refined it to correctly build the audio graph.',
+          'The original scheduler used setTimeout for audio execution but was refactored to utilize the Web Audio API for more precise scheduling.',
+          'The embedded Monaco editor was integrated for a better code editing experience.',
+          'Additional features like a frequency spectrum visualizer and a library of pre-loaded audio samples were introduced.',
+          'End-to-end testing was employed to iteratively polish various components, including the scheduler and user interface.',
+          'Documentation was created to explain the DSL primitives and guide users in composing with TuneCode.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Challanges',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'Building a domain-specific language (DSL) involved creating tokenizers, syntactic trees, and executing those trees. Though part of a class project, this was an intricate process requiring attention to detail.',
+          'Loading and preloading audio files asynchronously in the browser was a novel concept that required careful handling.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Reflections and Learnings',
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: 'Working on TuneCode introduced many new topics, such as tokenizers, syntactic trees, tree traversal, the Web Audio API, and Canvas API, along with integrations using Vue and external modules. This project presented unusual challenges, unlike typical web development, and demonstrated the power and flexibility of DSLs in solving complex and creative tasks. It also highlighted the importance of precision in audio scheduling and how different libraries can simplify or enhance development workflows.',
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Future Improvements',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'User Uploads: Enable users to upload their own audio files for further customization.',
+          'Editor Enhancements: Integrate syntax highlighting and auto-completion in the Monaco editor, leveraging ANTLR’s capabilities.',
+          'Documentation Translation: Translate all documentation into English to reach a wider audience.',
+        ],
+      },
+    ],
   },
   {
     id: '3d-music-visualizer',
