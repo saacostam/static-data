@@ -169,7 +169,76 @@ export const PROJECTS: Project[] = [
       isResponsive: true,
     },
     repoUrl: 'https://github.com/saacostam/lalu',
-    content: [],
+    content: [
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Motivation',
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: 'The motivation behind Lalu was to create a frontend application inspired by Spotify, designed to allow users to stream music, explore artist profiles, and enjoy curated playlists.',
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Key Features',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'Audio Playback: Includes basic playback functionality for songs and playlists.',
+          'Explore Artists: Access the profiles of various artists and their popular songs.',
+          'Spotify-like UI: Familiar and intuitive interface that mirrors the experience of using Spotify, making navigation and exploration easy for users.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Development Process Overview',
+      },
+      {
+        type: ProjectContentType.ORDERED_LIST,
+        listElements: [
+          'Initial Microservices Architecture: The project began as part of a class project using a sprint-based development cycle. Each team member was responsible for creating microservices in different languages, handling various entities. These services were integrated through an API gateway, consumed by both a mobile and a web app.',
+          'Layout and Global State Management: The first task focused on creating a complex layout where static components, such as the audio player and navigation, remained persistent across pages while dynamic content, such as artist profiles, followed a router-based behavior.',
+          'Data Integration: Once the layout was established, the next step was integrating data from the API gateway for artists, playlists, and songs, ensuring proper display on the frontend.',
+          'Audio Playback Handling: I explored various approaches for handling audio playback. While considering the Web Audio API, I opted for the native HTML audio element for simplicity and reliability.',
+          'Refactor and Mock Data: After the backend infrastructure was removed, I replaced the server data with mock data and refactored the codebase, breaking it down into more reusable components while ensuring the app maintained its core functionality.',
+          'Responsive Design Implementation: The final step involved refining the app to be responsive across different devices.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Challanges',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'Managing Audio Files and Playback: Understanding how to effectively manage audio files and integrate them into playlists was a significant challenge. By experimenting with both the Web Audio API and the native HTML audio element, I was able to achieve a stable playback functionality.',
+          'Complex Layout Implementation: This project required creating an unusual layout where certain elements, such as the player and navigation, persist across pages while the main content dynamically changes. This helped me gain a deeper understanding of state management and CSS techniques to build more complex layouts.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Learnings',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'Responsive Design: While the application is responsive, I realized that adopting a mobile-first design approach from the beginning might have simplified the development process. The current layout, though functional, could be further optimized for a better user experience.',
+          'Audio Element: This project gave me a solid grasp of the HTML audio element, helping me understand its capabilities and limitations compared to more complex solutions like the Web Audio API.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Future Improvements',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'Responsive Layout Revamp: A revisit of the responsive design might be necessary to improve it offering a more intuitive and comfortable experience across devices.',
+          'Enhanced Playback Features: Future updates may include additional playback modes such as shuffle, loop, and more advanced audio controls to mimic a full-fledged music streaming application.',
+        ],
+      },
+    ],
   },
   {
     id: 'signal-grid',
