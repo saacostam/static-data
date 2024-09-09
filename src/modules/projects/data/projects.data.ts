@@ -377,7 +377,58 @@ export const PROJECTS: Project[] = [
       height: 500,
     },
     repoUrl: 'https://github.com/saacostam/3d-crossy-road/',
-    content: [],
+    content: [
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Challenges and Solutions',
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: `During development, one of the biggest challenges was implementing the standard "input-update-draw" loop using BabylonJs, which required a steep learning curve. Although the framework itself was not inherently difficult, it needed to be learned from the ground up. Additionally, handling 3D models presented its own set of obstacles. Instead of relying on pre-built 3D models, I opted to use simpler shapes like cubes, cylinders, and spheres. These basic shapes were combined and manipulated directly within the game logic to form more complex structures, streamlining development given the project's modest visual requirements`,
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Key Features',
+      },
+      {
+        type: ProjectContentType.UNORDERED_LIST,
+        listElements: [
+          'Recreation of core Crossy Road gameplay from scratch.',
+          'Optimizations for game performance, such as pooling and cleanup of unused or off-screen elements.',
+          'Use of basic shapes to form complex structures, ensuring efficient development and minimizing dependencies on 3D modeling software.',
+          "Collision detection and movement in 3D space using BabylonJs's mesh collisions.",
+          'Game state management achieved through the use of state machines.',
+        ],
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Delelopment Process Overview',
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: 'The development process was driven more by curiosity and fun than by a formal methodology. Features were built as they came to mind, making this project a significant learning experience. The architecture was kept lean, with a focus on implementing a game loop similar to that of ExcaliburJs but adapted for 3D.',
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Reflections and Learnings',
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: "This project provided valuable experience working with BabylonJs. Although I didn't utilize all of the engine's features, I became comfortable with its basic workflow and primitives. I also gained a deeper understanding of handling movement and collisions in 3D space. The implementation of state machines for game state management was particularly rewarding, as it allowed for better organization of the game's various states.",
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: 'Additionally, I encountered challenges when attempting to integrate external 3D models into the project. The models were not normalized, resulting in significant size discrepancies, and I realized that external tools like Blender were necessary to fix these issues. This was a new learning experience and something I plan to explore further.',
+      },
+      {
+        type: ProjectContentType.HEADER,
+        text: 'Future Improvements and Next Steps',
+      },
+      {
+        type: ProjectContentType.TEXT,
+        text: 'Moving forward, I would like to revisit the integration of 3D models, learning to adjust and normalize them properly within the scene. Additionally, I realized that while BabylonJs is a powerful engine, the resulting architecture of my project might be better suited to a more lightweight framework such as ThreeJs. The slimmer codebase and simpler game loop suggest that using ThreeJs could lead to a more streamlined and efficient development process.',
+      },
+    ],
   },
   {
     id: 'tetris',
