@@ -7,11 +7,13 @@ import {
   getTopNRatedLeanProjects,
 } from './modules/projects/index.js';
 import { createDirectories } from './modules/fs-utils/index.js';
+import { getMe } from './modules/me/index.js';
 
 const builders: Builder[] = [
   getAllLeanProjects,
   getProjectByIdBuilder,
   getTopNRatedLeanProjects,
+  getMe,
 ];
 
 export async function index(builders: Builder[]): Promise<void> {
