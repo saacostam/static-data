@@ -1,6 +1,6 @@
 {
   "name": "static-data",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Application to host data as static json.",
   "type": "module",
   "engines": {
