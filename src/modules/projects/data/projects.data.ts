@@ -482,4 +482,20 @@ export const PROJECTS: Project[] = [
     repoUrl: 'https://github.com/saacostam/piano-roll',
     content: [],
   },
+  {
+    id: '3d-tower-defense',
+    name: '3D Tower Defense',
+    rating: 4.2,
+    category: [ProjectCategory.Games],
+    description:
+      '🛡️ A strategy game where players defend against waves of enemies by strategically placing towers on a 3D map. ',
+    smImage: undefined,
+    url: 'https://saacostam.github.io/3d-tower-defense/',
+    iframe: {
+      isResponsive: false,
+      canBeUsedInMobile: false,
+    },
+    repoUrl: 'https://github.com/saacostam/3d-tower-defense',
+    content: [],
+  },
 ];
