@@ -488,8 +488,8 @@ export const PROJECTS: Project[] = [
     rating: 4.2,
     category: [ProjectCategory.Games],
     description:
-      '🛡️ A strategy game where players defend against waves of enemies by strategically placing towers on a 3D map. ',
-    smImage: undefined,
+      '🛡️ A strategy game where players defend against waves of enemies by strategically placing towers on a dynamic 3D map. Built with a classic game loop architecture, the game uses Three.js for seamless 3D WebGL rendering. While still a work in progress, it showcases complex game logic, a variety of enemy types, and advanced rendering techniques. Future updates will introduce level-based gameplay for increasingly difficult challenges and resource management mechanics to add strategic depth.',
+    smImage: '/assets/project/3d-tower-defense.png',
     url: 'https://saacostam.github.io/3d-tower-defense/',
     iframe: {
       isResponsive: false,
