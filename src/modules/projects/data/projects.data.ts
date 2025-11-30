@@ -498,4 +498,20 @@ export const PROJECTS: Project[] = [
     repoUrl: 'https://github.com/saacostam/3d-tower-defense',
     content: [],
   },
+  {
+    id: 'home-resource-manager',
+    name: 'Home Resource Manager',
+    rating: 4.7,
+    category: [ProjectCategory.SoftwareEngineering],
+    description:
+      '🏡 A home organization tool that centralizes tasks, notes, inventory, and categories into a single clean interface. Built with a vertically-sliced, scalable architecture and powered by React Query, the project showcases thoughtful UX, reusable components, and full CRUD workflows across the app. While still evolving, it already provides a calm, structured way to manage everyday home life, with future updates planned for smarter automation, richer insights, and expanded resource-tracking features.',
+    smImage: '/assets/project/home-resource-manager.png',
+    url: 'https://saacostam.github.io/home-resource-manager/',
+    iframe: {
+      isResponsive: true,
+      canBeUsedInMobile: true,
+    },
+    repoUrl: 'https://github.com/saacostam/home-resource-manager',
+    content: [],
+  },
 ];
