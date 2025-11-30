@@ -31,7 +31,7 @@
     "lint": "npx eslint . --ext .ts --ext .mts",
     "test": "npx run jest --coverage",
     "prettier": "prettier --config .prettierrc --write .",
-    "test:watch": "jest --watch",
+    "test:watch": "npx jest --watch",
     "go": "npm run build; npm run start; npm run prettier;",
     "prepare": "husky"
   },
