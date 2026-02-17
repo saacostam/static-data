@@ -517,7 +517,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'sonarah',
     name: 'Sonarah',
-    rating: 4.5,
+    rating: 4.6,
     category: [
       ProjectCategory.SoftwareEngineering,
       ProjectCategory.MusicSoftware,
