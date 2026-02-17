@@ -514,4 +514,23 @@ export const PROJECTS: Project[] = [
     repoUrl: 'https://github.com/saacostam/home-resource-manager',
     content: [],
   },
+  {
+    id: 'sonarah',
+    name: 'Sonarah',
+    rating: 4.5,
+    category: [
+      ProjectCategory.SoftwareEngineering,
+      ProjectCategory.MusicSoftware,
+    ],
+    description:
+      'Sonarah is a Spotify-powered playlist matching tool for people who care about flow, mood, and intent — not just collections of tracks. Instead of generating playlists automatically, Sonarah helps you curate by comparison: you take a playlist you trust and match it track-by-track with new music that feels right in the same position. ',
+    smImage: '/assets/project/sonarah.jpeg',
+    url: 'https://saacostam.github.io/sonarah/',
+    iframe: {
+      isResponsive: true,
+      canBeUsedInMobile: true,
+    },
+    repoUrl: 'https://github.com/saacostam/sonarah',
+    content: [],
+  },
 ];
